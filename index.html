@@ -53,11 +53,12 @@
             </select>
 
             Request Method <select id='response_data_type'>
+              <option value="">Don't Care</option>
               <option value="xml">XML</option>
               <option value="json">JSON</option>
               <option value="jsonp">JSONP</option>
               <option value="text">Text</option>
-              <option value="">Don't Care</option>
+              
             </select><br/>
             <div id='params_container'>
                 Parameters to your API <button id='add_params'>Add</button><br>
@@ -69,6 +70,7 @@
             </div>
             <input type="submit" value="Go" />
             <div class='status invisible'>&nbsp;</div>
+            <div class='time_taken'>&nbsp;</div>
             Response: <textarea id='response_area' rows = '10' cols= '80' name="response_body" ></textarea>
             
         </form>

@@ -223,9 +223,11 @@ button {  width: auto; overflow: visible; }
  /* Primary Styles
     Author: 
  */
- .loading { background: white url('../images/spinner_16x16.gif') left center no-repeat;}
-  
-
+.loading { background: white url('../images/spinner_16x16.gif') left center no-repeat;}
+.error {
+  color: #D8000C;
+  background-color: #FFBABA;
+}
 
 
 
