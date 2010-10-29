@@ -1,7 +1,6 @@
 $(document).ready(function(){
   $("#api_request").focus(function(){
     if($(this).val().substring(0,1) !='/'){
-      console.log("/"+$(this).val());
       $(this).val("/"+$(this).val());
     }
   });
@@ -39,9 +38,9 @@ $(document).ready(function(){
           $("#response_area").val(request.responseText).addClass("error");
         },
         success: function(data, textStatus, request ){
+          console.log(request);
           $("#response_area").val(request.responseText);
           console.log(data);
-          console.log(request);
           $(".status").removeClass("loading invisible");
         },
         complete: function(){
